@@ -28,8 +28,14 @@ app.get("/api/notes", (request, response) => {
     response.json(dbNotes)
 })
 
+// Route that will receive new note and post it to the front end
 app.post("/api/notes", (request, response) => {
     
+})
+
+// Route that will delete a note
+app.delete("api/notes/:id", (request, response) => {
+
 })
 
 app.listen(PORT, () => {
